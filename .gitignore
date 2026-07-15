@@ -1,19 +1,85 @@
 # ==============================================================================
-# .GITIGNORE - Resume Analyzer & JD Matcher Version Control Safeguards
-# Capstone Project Repository Strategy
+# Resume Analyzer - .gitignore
 # ==============================================================================
 
-# --- Python Runtime & Bytecode Caches ---
-__pycache__/                      # Python compiled source file cache directories
-*.py[cod]                        # Individual compiled bytecodes (.pyc, .pyd)
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
 
-# --- Isolated Development Environments ---
-.venv/                           # Primary local application virtual environment
-venv/                            # Alternative local virtual environment directory
+# -----------------------------
+# Virtual Environments
+# -----------------------------
+.venv/
+venv/
+env/
+ENV/
 
-# --- Secure Credentials & Configuration ---
-.env                             # Local private workspace secrets (GROQ_API_KEY)
+# -----------------------------
+# Environment Variables
+# -----------------------------
+.env
+.env.*
+!.env.example
 
-# --- IDE Profiles & Operating System Files ---
-.vscode/                         # Visual Studio Code workspace settings configurations
-.DS_Store                        # Apple macOS background system files
+# -----------------------------
+# Streamlit
+# -----------------------------
+.streamlit/secrets.toml
+
+# -----------------------------
+# Uploaded Files
+# -----------------------------
+uploads/
+temp/
+tmp/
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+
+# -----------------------------
+# Build Files
+# -----------------------------
+build/
+dist/
+*.egg-info/
+
+# -----------------------------
+# IDEs
+# -----------------------------
+.vscode/
+.idea/
+
+# -----------------------------
+# Operating System Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Testing
+# -----------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# -----------------------------
+# Jupyter Notebooks
+# -----------------------------
+.ipynb_checkpoints/
+
+# -----------------------------
+# Type Checkers
+# -----------------------------
+.mypy_cache/
+.pyre/
+
+# -----------------------------
+# Misc
+# -----------------------------
+*.sqlite3
+*.db
