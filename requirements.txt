@@ -1,0 +1,21 @@
+# ==============================================================================
+# REQUIREMENTS.TXT - Resume Analyzer & JD Matcher Ecosystem
+# Capstone Project Dependency Specification
+# ==============================================================================
+
+# Core Application Framework & Environment Management
+streamlit                 # Interactive web dashboard interface UI
+python-dotenv             # Secure handling of local .env file variables
+
+# Artificial Intelligence & LLM Orchestration (LangChain Ecosystem)
+langchain-core            # Core abstraction models and chat prompt templates
+langchain-community       # Base third-party component integrations layer
+langchain-groq            # Specialized ChatGroq interface client bindings
+
+# Unstructured Data Parsing & Runtime Validation
+pypdf                     # Lightning-fast in-memory PDF stream text extraction
+pydantic                  # Data parsing definitions and strict JSON validations
+
+# ==============================================================================
+# Deployment Note: Run 'pip install -r requirements.txt' inside your isolated .venv
+# ==============================================================================
